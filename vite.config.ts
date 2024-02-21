@@ -4,7 +4,7 @@ import tailwindcss from 'tailwindcss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/huddle-landing-page-with-alternating-feature-blocks',
+  base: '/huddle-with-feature-blocks',
   plugins: [react()],
   css: {
     postcss: {
