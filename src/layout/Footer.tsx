@@ -4,7 +4,7 @@ import { GlobalObj } from '../components/shared/consts';
 const Footer = () => {
   const { footer, socials, logo } = GlobalObj;
   return (
-    <div className="py-20 text-white bg-Very-Dark-Cyan">
+    <div className="pb-20 pt-56 text-white bg-Very-Dark-Cyan">
       <SectionWrapper>
         <img className="invert brightness-0 mb-10" src={logo} alt="logo" />
         <div className="flex flex-wrap gap-20 justify-center md:justify-between">
@@ -20,7 +20,11 @@ const Footer = () => {
             <div key={index} className="flex flex-col ">
               <ul className="flex flex-col gap-5">
                 {item.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index}>
+                    <a className="cursor-pointer hover:underline" href="/">
+                      {item}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>

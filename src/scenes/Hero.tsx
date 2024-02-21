@@ -11,7 +11,6 @@ const Hero = () => {
       <SectionWrapper>
         <div>
           <Header />
-
           <TwoColumnLayout
             textsDiv={
               <div className="max-w-xs flex-1 sm:max-w-md text-center md:text-left">
@@ -19,7 +18,6 @@ const Hero = () => {
                   {hero.title}
                 </h1>
                 <p className="text-Very-Dark-Cyan/80 my-8 text-sm">
-                  {' '}
                   {hero.desc}
                 </p>
                 <Button
